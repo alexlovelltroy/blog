@@ -1,22 +1,16 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+---
+layout: default
+title: Jekyll Boilerplate
+---
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
 
-  <title>Blog</title>
-  <meta name="description" content="">
+<h1>{{ page.title }}</h1>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+{% for post in site.posts %}
 
-</head>
+    {{ post.date | date: "%B %e, %Y" }}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+
 
 <body>
 
@@ -83,3 +77,19 @@ $ git checkout gh-pages
   
 </body>
 </html>
+=======
+---
+layout: default
+title: Jekyll Boilerplate
+---
+
+
+<h1>{{ page.title }}</h1>
+
+{% for post in site.posts %}
+
+    {{ post.date | date: "%B %e, %Y" }}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+
+{% endfor %}
+>>>>>>> a03ed35eecd050b85ef57dd257a7918d29570e67
