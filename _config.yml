@@ -2,4 +2,4 @@ auto: true
 server: true
 markdown: rdiscount
 base_url: /
- my_url: http://alexlovelltroy.github.com/blog
+my_url: http://alexlovelltroy.github.com/blog
